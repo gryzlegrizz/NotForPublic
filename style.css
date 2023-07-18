@@ -1,0 +1,88 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #1a1a1a; /* Warna latar belakang gelap */
+    color: #f0f0f0; /* Warna teks putih */
+}
+
+.container {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.h1 {
+    font-family: 'Frijole', cursive;
+    font-size: 48px;
+    font-weight: 200;
+    color: #fff; /* Warna teks ungu neon */
+    text-shadow: 0 0 10px rgba(218, 112, 214, 0.8), 0 0 20px rgba(218, 112, 214, 0.8), 0 0 30px rgba(218, 112, 214, 0.8);
+    animation: neon-glow 1s ease-in-out infinite alternate;
+}
+
+.subtitle {
+    font-size: 20px;
+    margin-top: 10px;
+    color: #ccc; /* Warna teks abu-abu muda */
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border: 1px solid #666; /* Warna border abu-abu tua */
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: #333; /* Warna input gelap */
+    color: #f0f0f0; /* Warna teks putih pada input */
+}
+
+button {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #da70d6; /* Warna tombol ungu neon */
+    border: none;
+    color: #fff; /* Warna teks putih pada tombol */
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.cake-container {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#konten img {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 10px;
+}
+
+#ucapanTampil {
+    text-align: justify; /* Menyelaraskan teks secara rapih (justify) */
+    text-justify: inter-word; /* Memastikan kata-kata dipisahkan dengan baik */
+    margin-top: 20px;
+    font-size: 18px;
+    color: #ccc; /* Warna teks abu-abu muda pada ucapan */
+    opacity: 0; /* Awalnya set ke transparan */
+    transition: opacity 1s ease; /* Efek transisi untuk opasitas */
+}
+
+/* Efek animasi untuk ucapan */
+.ucapan-animasi {
+    animation: fadeIn 1s forwards; /* Efek fadeIn dengan durasi 1 detik */
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1; /* Akhiran set ke opasitas penuh */
+    }
+}
